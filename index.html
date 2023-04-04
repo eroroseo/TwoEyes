@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Moving Eyes</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="eyes">
+		<div class="eye">
+			<div class="pupil"></div>
+		</div>
+		<div class="eye">
+			<div class="pupil"></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+	<script>
+		fetch('data.json')
+			.then(response => response.json())
+			.then(data => {
+				// Do something with the JSON data
+				console.log(data);
+			})
+			.catch(error => console.error(error));
+	</script>
+</body>
+</html>
